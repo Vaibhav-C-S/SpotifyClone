@@ -33,10 +33,10 @@ git clone https://github.com/Vaibhav-C-S/SpotifyClone.git
 ```
 ### 2. Project Structure
 
-SpotifyClone/
-│
-├── spotify_backend/   # The backend service
-└── tailwind_frontend/ # The frontend application
+1.SpotifyClone/
+
+2a. spotify_backend/   # The backend service
+2b.tailwind_frontend/ # The frontend application
 
 ### 3.Backend Setup
 
