@@ -30,4 +30,4 @@ Welcome to the **Spotify Clone** project! This application replicates the core f
 
 To get started, clone the repository to your local machine:
 ```bash
-git clone https://github.com/your-username/spotify_clone.git
+git clone [https://github.com/your-username/spotify_clone.git](https://github.com/Vaibhav-C-S/SpotifyClone.git)
