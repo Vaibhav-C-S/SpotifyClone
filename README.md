@@ -90,6 +90,19 @@ Authorization: Bearer <Your_JWT_Token>
 - Fetch a list of songs.
 
 ### Screenshots
+# Project Images
+
+## Token-Based Authentication
+![Token-Based Authentication](assets/images/token_based_authentication.png)
+
+## Song View
+![Song View](assets/images/song_view.png)
+
+## Search Page
+![Search Page](assets/images/search_page.png)
+
+## Cloudinary Upload Demo
+![Cloudinary Upload](assets/images/cloudinary_upload.png)
 
 
 
