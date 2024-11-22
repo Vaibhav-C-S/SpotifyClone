@@ -35,8 +35,10 @@ git clone https://github.com/Vaibhav-C-S/SpotifyClone.git
 
 1.SpotifyClone/
 
-2a. spotify_backend/   # The backend service
-2b.tailwind_frontend/ # The frontend application
+2a. spotify_backend
+
+2b.tailwind_frontend
+
 
 ### 3.Backend Setup
 
