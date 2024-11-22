@@ -28,6 +28,66 @@ Welcome to the **Spotify Clone** project! This application replicates the core f
 
 ### 1. Clone the Repository
 
-To get started, clone the repository to your local machine:
 ```bash
-git clone [https://github.com/your-username/spotify_clone.git](https://github.com/Vaibhav-C-S/SpotifyClone.git)
+git clone https://github.com/Vaibhav-C-S/SpotifyClone.git
+```
+### 2. Project Structure
+
+SpotifyClone/
+│
+├── spotify_backend/   # The backend service
+└── tailwind_frontend/ # The frontend application
+
+### 3.Backend Setup
+
+1. Navigate to the backend folder:
+   ```bash
+   cd SpotifyClone/spotify_backend
+    npm install
+   ```
+please fill the .env file with respective details
+2.To run Backend
+```bash
+  node ./index.js
+```
+
+### 4. Front end Setup
+
+```bash
+cd SpotifyClone/tailwind_frontend
+npm install
+```
+
+### To configure the cloudinary settings go to
+### public/src/assets/shared/CloudinaryUpload.jsx
+### Keep the respective cloud_name and preset_name
+
+
+To start
+```bash
+npm run dev
+```
+
+### API Overview
+
+All API calls are authenticated using JWT. Ensure to include the token in the request headers:
+Authorization: Bearer <Your_JWT_Token>
+
+## Key Endpoints
+
+### POST /api/auth/register
+- Register a new user.
+
+### POST /api/auth/login
+- Log in to receive a token.
+
+### POST /api/songs/upload
+- Upload a new song (requires token).
+
+### GET /api/songs
+- Fetch a list of songs.
+
+### Screenshots
+
+
+
