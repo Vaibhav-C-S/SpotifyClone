@@ -20,22 +20,7 @@ app.use(cors())
 
 
 
-//connect mongodb to our nodeapp
-//mongoose .connect mein 2 argument 1.which db to connect to,db's url
-//2. connections options
-// mongoose.connect("mongodb+srv://fastpacedyt:"+ process.env.MONGO_PASSWORD+"@cluster0.a7vex.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-// {
-//     useNewUrlParser:true,
-//     useUnifiedTopology:true,
 
-// })
-// .then((x)=>{
-//     console.log("Connected to MongoDB")
-// })
-// .catch((err)=>{
-//     console.log(err)
-//     console.log("error while connecting to mongodb")
-// })
 mongoose.connect("mongodb://localhost:27017",
     {
         useNewUrlParser:true,
@@ -50,44 +35,6 @@ mongoose.connect("mongodb://localhost:27017",
         console.log("error while connecting to mongodb")
     })
 
-//connecting to the jwt
-
-// let opts = {}
-// opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
-// opts.secretOrKey = process.env.SECRET_KEY;
-
-// passport.use(new JwtStrategy(opts, function(jwt_payload, done) {
-//     User.findOne({id: jwt_payload.sub}, function(err, user) {
-//         if (err) {
-//             return done(err, false);
-//         }
-//         if (user) {
-//             return done(null, user);
-//         } else {
-//             return done(null, false);
-//             // or you could create a new account
-//         }
-//     });
-// }));
-
-// passport.use(new JwtStrategy(opts, function(jwt_payload, done) {
-//     console.log("JWT payload:", jwt_payload);
-    
-//     User.findOne({_id: jwt_payload.sub}, function(err, user) {
-//         if (err) {
-//             console.error("Error finding user:", err);
-//             return done(err, false);
-//         }
-        
-//         if (user) {
-//             console.log("User found:", user);
-//             return done(null, user);
-//         } else {
-//             console.log("No user found with the given identifier.");
-//             return done(null, false);
-//         }
-//     });
-// }));
 
 
 const JWTStrategy = require('passport-jwt').Strategy;
